@@ -31,20 +31,20 @@ struct Colores {
     }
 }
 
-struct Paises{
+class ColeccionDePaises{
     let paises = ["Argentina", "Australia", "Austria", "Azerbaiyán", "Bélgica", "Bolivia", "Brasil", "Bulgaria", "Camerún", "Canadá", "Chile", "China", "Colombia", "Corea del Norte", "Costa Rica" ,"Croacia", "Cuba", "Dinamarca", "Dominica" ,"Ecuador","Egipto","El Salvador","Eslovenia","España", "México"]
     
-    func regresaPaisAleatorio() -> String {
+    func obtenPais() -> String {
         let posicion = Int (arc4random()) % paises.count
         return paises[posicion]
     }
 }
 
-struct TiposHamburguesas {
-    let tiposHamburguesas = ["Angus","Clásica","Big Carl","BIG KING","Big Mac","Chicken Big King","Crispy Chicken con Queso","Cuarto de Libra","Doble Western Bacon con queso","​Famous Star con Queso","Hamburguesa con Tocino","King de Pollo","MEGA XT Clásica","McNífica","Portobello Mushroom","Rodeo BurgerSuper Star con Queso","TENDERGRILL","ThickBurger Original","ThickBurger Guacamole Bacon","Western Bacon con Queso",
+class ColeccionDeHamburguesa {
+    let tiposHamburguesas = ["Angus","Clásica","Big Carl","BIG KING","Big Mac","Chicken Big King","Crispy Chicken con Queso","Cuarto de Libra","Doble Western Bacon","​Famous Star con Queso","Hamburguesa con Tocino","King de Pollo","MEGA XT Clásica","McNífica","Portobello Mushroom","Rodeo BurgerSuper Star","TENDERGRILL","ThickBurger Original","ThickBurger Guacamole","Western Bacon con Queso",
 "WHOPPER BBQ","WHOPPER con Queso","WHOPPER Angry","X-TREME"]
     
-    func regresaTiposHAleatorio() -> String {
+    func obtenHamburguesa() -> String {
         let posicion = Int (arc4random()) % tiposHamburguesas.count
         return tiposHamburguesas[posicion]
     }
