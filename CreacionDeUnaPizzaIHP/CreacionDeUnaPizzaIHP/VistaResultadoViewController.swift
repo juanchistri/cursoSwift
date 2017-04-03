@@ -38,9 +38,9 @@ class VistaResultadoViewController: UIViewController {
             }
             if ( ingredientes != "" )
             {
-                if (contadorIngredientes >= 5)
+                if (contadorIngredientes > 5)
                 {
-                    txtMensaje += "- Debes seleccionar menos de 5 ingredientes. \n"
+                    txtMensaje += "- Debes seleccionar máximo 5 ingredientes. \n"
                 }
                 
             
